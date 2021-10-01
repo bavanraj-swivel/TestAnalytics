@@ -10,7 +10,12 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-L7VLMQ3SVL');
+  gtag('config', 'G-L7VLMQ3SVL', {
+      'custom_map': {'dimension1': 'merchantId'}
+  });
+  
+  gtag('event', 'onclick', {'merchantId': "UID123"});
+    
 </script>
     
 </head>
