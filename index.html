@@ -9,12 +9,16 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+    
 
   gtag('config', 'G-L7VLMQ3SVL', {
       'custom_map': {'dimension1': 'merchantId'}
   });
+    
+  var dimensionValue = 'SOME_DIMENSION_VALUE';
+  ga('set', 'dimension1', dimensionValue);
   
-  gtag('event', 'onclick', {'merchantId': "UID123"});
+  gtag('event', 'onclick', {'merchantId': 'UID123'});
     
 </script>
     
