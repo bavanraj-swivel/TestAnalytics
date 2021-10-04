@@ -10,17 +10,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        var pagePath = location.href;
-        var pageTitle = 'This is a test!';
+//         var pagePath = location.href;
+//         var pageTitle = 'This is a test!';
 
-        gtag('config', 'G-L7VLMQ3SVL', {
-            'custom_map': { 'dimension1': 'merchantId' },
-
-            'page_path': pagePath,
-            'page_title': pageTitle,
-
-            'merchantId': 'UID123',
-        });
+        gtag('config', 'G-L7VLMQ3SVL', { 'dimension1': 'UID123' });
 
 //   var dimensionValue = 'merchantId123';
 //   ga('set', 'dimension1', dimensionValue);
